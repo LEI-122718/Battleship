@@ -1,38 +1,27 @@
 package iscteiul.ista;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest
-    extends TestCase
-{
+public class AppTest {
+
     /**
      * Create the test case
      *
-     * @param testName name of the test case
+     * @param testName name of the test case (para referência)
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    public AppTest(String testName) {
+        // Não necessário em JUnit 5, mas mantido para documentação
     }
 
     /**
-     * @return the suite of tests being tested
+     * Rigorous Test :-)
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+    void testApp() {
+        assertTrue(true);
     }
 }

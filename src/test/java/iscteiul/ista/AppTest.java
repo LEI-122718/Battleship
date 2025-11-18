@@ -11,9 +11,9 @@ public class AppTest {
     /**
      * Create the test case
      *
-     * @param testName name of the test case (para referência)
+     //* @param testName name of the test case (para referência)
      */
-    public AppTest(String testName) {
+    public AppTest() {
         // Não necessário em JUnit 5, mas mantido para documentação
     }
 

@@ -26,3 +26,5 @@ Compila o projeto com Maven
 Executa mvn package para compilar, correr testes e gerar o .jar.
 
 Ajuda o Dependabot a detetar vulnerabilidades nas dependências do projeto.
+
+2.0

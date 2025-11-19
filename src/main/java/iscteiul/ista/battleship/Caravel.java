@@ -1,6 +1,3 @@
-/**
- *
- */
 package iscteiul.ista.battleship;
 
 public class Caravel extends Ship {
@@ -18,30 +15,32 @@ public class Caravel extends Ship {
             throw new NullPointerException("ERROR! invalid bearing for the caravel");
 
         switch (bearing) {
-            case NORTH:
-            case SOUTH:
-                for (int r = 0; r < SIZE; r++)
-                    getPositions().add(new Position(pos.getRow() + r, pos.getColumn()));
-                break;
-            case EAST:
-            case WEST:
-                for (int c = 0; c < SIZE; c++)
-                    getPositions().add(new Position(pos.getRow(), pos.getColumn() + c));
-                break;
-            default:
-                throw new IllegalArgumentException("ERROR! invalid bearing for the caravel");
+            case NORTH -> {
+                for (int i = 0; i < SIZE; i++) {
+                    getPositions().add(new Position(pos.getRow() - i, pos.getColumn()));
+                }
+            }
+            case SOUTH -> {
+                for (int i = 0; i < SIZE; i++) {
+                    getPositions().add(new Position(pos.getRow() + i, pos.getColumn()));
+                }
+            }
+            case EAST -> {
+                for (int i = 0; i < SIZE; i++) {
+                    getPositions().add(new Position(pos.getRow(), pos.getColumn() + i));
+                }
+            }
+            case WEST -> {
+                for (int i = 0; i < SIZE; i++) {
+                    getPositions().add(new Position(pos.getRow(), pos.getColumn() - i));
+                }
+            }
+            default -> throw new IllegalArgumentException("ERROR! invalid bearing for the caravel");
         }
-
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.Ship#getSize()
-     */
     @Override
     public Integer getSize() {
         return SIZE;
     }
-
 }

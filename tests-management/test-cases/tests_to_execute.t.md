@@ -11,7 +11,7 @@ Tags: #unit-tests #test-cases
 
 ## S4 Core Components test case [ID: TMS-S4]
 * C9 PositionTest     [ID: TMS-S4-C9]    #unit-tests #test-cases
-* C10 CompassTest     [ID: TMS-S4-C10]   #unit-tests #test-cases
+* C10 CompassTest     [ID: TMS-S4-C10]   #unitt-tests #test-cases
 
 ## S5 Tasks test case [ID: TMS-S5]
 * C12 GameTest        [ID: TMS-S5-C12]   #unit-tests #test-cases

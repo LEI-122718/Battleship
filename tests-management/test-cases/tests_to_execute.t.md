@@ -1,5 +1,5 @@
 # Unit tests
-Tags: #unit-tests #test-cases
+Tags: #unit-tests #test-cases @LEI-122662
 
 ## S3 Ships test case [ID: TMS-S3]
 * C3 FrigateTest      [ID: TMS-S3-C3]    #unit-tests #test-cases
